@@ -1,0 +1,15 @@
+# Ad-hoc captures — promote deliberately into an incident's evidence/ directory
+# after checking them for personal data. Full logcat dumps routinely contain
+# phone numbers, emails and contact records.
+*.tmp
+scratch/
+/logcat-*.log
+/bugreport*.zip
+
+# Snapshots default to docs/device-snapshot-<date>.txt when run with no
+# argument; those are throwaway. The committed profile is docs/device-profile.md.
+docs/device-snapshot-*.txt
+
+# Android platform-tools, if ever unpacked in-tree
+platform-tools/
+*.zip

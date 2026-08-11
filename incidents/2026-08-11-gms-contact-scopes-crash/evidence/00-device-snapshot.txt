@@ -1,0 +1,51 @@
+# Device snapshot — 2026-08-11T13:43:51-05:00
+
+## Device
+ro.product.model                       Pixel 10 Pro
+ro.product.device                      blazer
+ro.build.version.release               17
+ro.build.display.id                    2026080501
+ro.build.version.security_patch        2026-08-05
+ro.build.version.sdk                   37
+ro.build.type                          user
+
+## GrapheneOS / GmsCompat packages
+package:android.overlay.grapheneos
+package:app.grapheneos.AppCompatConfig
+package:app.grapheneos.apps
+package:app.grapheneos.backup.contacts
+package:app.grapheneos.camera
+package:app.grapheneos.carrierconfig2
+package:app.grapheneos.gmscompat
+package:app.grapheneos.gmscompat.config
+package:app.grapheneos.gmscompat.lib
+package:app.grapheneos.info
+package:app.grapheneos.logviewer
+package:app.grapheneos.networklocation
+package:app.grapheneos.pdfviewer
+package:app.grapheneos.setupwizard
+package:app.grapheneos.speechservices
+package:com.android.phone.overlay.grapheneos
+package:com.android.providers.telephony.overlay.grapheneos
+
+## Sandboxed Google Play components
+com.google.android.gms           versionName=26.24.34 (260400-938041327)
+com.android.vending              versionName=52.0.22-31 [0] [PR] 936429930
+com.google.android.gsf           <not installed>
+app.grapheneos.gmscompat         versionName=1
+
+## GMS contacts-related permission state
+android.permission.WRITE_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+android.permission.GET_ACCOUNTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+android.permission.READ_CONTACTS: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+## Contacts provider process
+u0_a76       20252   794 3482826900 156800 0                   0 S android.process.acore
+
+## Crash buffer summary (by process)
+     97 com.google.android.gms
+      1 com.discord
+
+## Crash buffer summary (by exception)
+     97 java.lang.IllegalArgumentException: Invalid column photo_uri
+      1 android.app.ForegroundServiceStartNotAllowedException: Service.startForeground() not allowed: service com.discord/com.google.android.play.core.assetpacks.ExtractionForegroundService
